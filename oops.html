@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="oops.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<button onclick="test()">test</button>
+<button onclick="obj.mytest">oops test</button>
+<button onclick="obj.alldetails" class="btn btn-success btn-lg">showdata</button>
+<button onclick="obj.about" class="btn btn-success">Ajax About Us</button>
+<button onclick="obj.contact" class="btn btn-success">Ajax Contact Us</button>
+<button onclick="obj.login" class="btn btn-success">Ajax Login </button>
+<button onclick="obj.signup" class="btn btn-success">Ajax Sign up</button>
+
+<div class="row">
+<div class="col-sm-3">
+<input type="text" id="fname" class="form-control">
+<input type="text" id="mobile" class="form-control">
+<input type="text" id="city" class="form-control">
+<input type="text" id="pincode" class="form-control">
+<button class="btn btn-primary" onclick="obj.savedata">save</button>
+
+<hr>
+
+
+<input type="text" id="pname" class="form-control">
+<input type="text" id="price" class="form-control">
+<input type="text" id="qty" class="form-control">
+<input type="text" id="desc" class="form-control">
+<button class="btn btn-success" onclick="obj.saveproduct">save product</button>
+</div>
+<div class="col-sm-6" id="msg"></div>
+<div class="col-sm-3"></div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

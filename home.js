@@ -51,7 +51,24 @@ function three()
         }
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("msg").innerHTML = this.responseText;//all the content of welcome.html will store in response.txt
+				//json parsing start
+				var jsondata=this.responseText;
+				var ar1=JSON.parse(jsondata);
+				var data="<table class='table table-bordered table-hover'>";
+				data=data+"<tr class='success'><th>name</th><th>mobile</th><th>city</th></tr>";
+				
+				for(var i=0;i<ar1.length;i++)
+				{
+					data=data+"<tr>";
+					data=data+"<td>"+ar1[i].name+"</td>";
+					data=data+"<td>"+ar1[i].mobile+"</td>";
+					data=data+"<td>"+ar1[i].city+"</td>";
+					
+					data=data+"</tr>";
+				}
+				data=data+"</table>";
+				document.getElementById("msg").innerHTML = data;
+				//json parsing end
             }
         };
         xmlhttp.open("GET","userlist.json",true);//call file welcome.html
