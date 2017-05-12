@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="oops1.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<button onclick="obj.test">oops test</button>
+<button onclick="obj.studentDetails" class="btn btn-primary">Student Details</button>
+<button onclick="obj.showdata" class="btn btn-warning">showdata</button>
+</div>
+<div class="row">
+<div class="col-sm-3">
+<input type="text" class="form-control" id="name" name="name" placeholder="enter name">
+<input type="text" class="form-control" id="mobile" name="mobile" placeholder="enter mobile">
+<input type="text" class="form-control" id="city" name="city" placeholder="enter city">
+<input type="text" class="form-control" id="pincode" name="pincode" placeholder="enter pincode">
+<input type="checkbox" id="terms"><label> Agree on terms & Condition</label>
+
+<p id="termserror" style="display:none; color:red">checkbox input is necessary</p>
+<button class="btn btn-info" onclick="obj.save">save</button>
+</div>
+<div class="col-sm-3"></div>
+<div class="col-sm-6" id="msg"></div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

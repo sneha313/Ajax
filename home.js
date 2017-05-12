@@ -20,7 +20,7 @@ function one()
 
 function two()
 {
-  if (window.XMLHttpRequest) {
+  if(window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
         } else {
@@ -40,8 +40,6 @@ function two()
 
 function three()
 {
-	
-	
   if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
